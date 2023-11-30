@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:perfil/pages/carros.dart';
+import 'package:perfil/pages/favoritos.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -35,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int _selectIndex = 0;
   List<Widget> pages = const [
     PageCar(),
-    Text("2"),
+    PageFavoritos(),
     Text("3"),
   ];
 
