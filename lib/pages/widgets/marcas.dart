@@ -17,7 +17,7 @@ class _MarcasState extends State<Marcas> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              "assets/logo.png",
+              "assets/imagens/logo.png",
               width: 48,
             ),
             Text(
