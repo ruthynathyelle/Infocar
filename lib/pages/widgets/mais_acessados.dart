@@ -18,12 +18,12 @@ class _MaisAcessadosState extends State<MaisAcessados> {
         child: Column(
           children: [
             Image.asset(
-              "assets/acura_logo.png",
+              "assets/imagens/logo.png",
               width: 48,
             ),
             const Text("INTEGRA"),
             const Text("Acura"),
-            Text("\$ 40.000"),
+            const Text("\$ 40.000"),
             //Asset da Imagem
             //Titulo do carro - ajustar a fonte para ficar fina
             //Marca do Carro - ajustar a fonte para ficar em negrito (bold)
