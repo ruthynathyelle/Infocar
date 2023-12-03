@@ -17,7 +17,7 @@ class _MarcasState extends State<Marcas> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              "assets/acura_logo.png",
+              "assets/logo.png",
               width: 48,
             ),
             Text(
