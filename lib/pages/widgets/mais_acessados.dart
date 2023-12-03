@@ -21,8 +21,8 @@ class _MaisAcessadosState extends State<MaisAcessados> {
               "assets/acura_logo.png",
               width: 48,
             ),
-            Text("INTEGRA"),
-            Text("Acura"),
+            const Text("INTEGRA"),
+            const Text("Acura"),
             Text("\$ 40.000"),
             //Asset da Imagem
             //Titulo do carro - ajustar a fonte para ficar fina
