@@ -41,7 +41,7 @@ class _MaisAcessadosState extends State<MaisAcessados> {
         color: const Color.fromRGBO(212, 212, 212, 1),
         borderRadius: BorderRadius.circular(12),
       ),
-      height: 100,
+      height: 200,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
