@@ -1,14 +1,20 @@
-// lib/services/api_service.dart
-
+import 'dart:convert';
 import 'package:http/http.dart' as http;
+import 'package:perfil/models/carro.dart';
 
 class ApiService {
-  final String baseUrl;
+  static const String baseUrl = 'https://parallelum.com.br/fipe/api/v2';
 
-  ApiService(this.baseUrl);
+  Future<List<Carro>> getCarros(String type, String brand, String model) async {
+    final response = await http.get(
+      Uri.parse('$baseUrl/$type/brands/$brand/models/$model/years'),
+    );
 
-  Future<http.Response> get(String endpoint) {
-    final url = Uri.parse('$baseUrl$endpoint');
-    return http.get(url);
+    if (response.statusCode == 200) {
+      final List<dynamic> data = json.decode(response.body);
+      return data.map((json) => Carro.fromJson(json)).toList();
+    } else {
+      throw Exception('Failed to load cars');
+    }
   }
 }

@@ -12,4 +12,15 @@ class Carro {
     required this.descricao,
     required this.imgUrl,
   });
+
+  // Adicione este método para converter de JSON para um objeto Carro
+  factory Carro.fromJson(Map<String, dynamic> json) {
+    return Carro(
+      modelo: json['modelo'],
+      marca: json['marca'],
+      valor: json['valor'],
+      descricao: json['descricao'],
+      imgUrl: json['imgUrl'],
+    );
+  }
 }

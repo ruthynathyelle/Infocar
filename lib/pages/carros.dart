@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-//import 'package:perfil/pages/widgets/mais_acessados.dart';
-//import 'package:perfil/pages/widgets/carros_disponiveis.dart';
-//import 'package:perfil/pages/widgets/marcas.dart';
+import 'package:perfil/pages/widgets/mais_acessados.dart';
+import 'package:perfil/pages/widgets/carros_disponiveis.dart';
+import 'package:perfil/pages/widgets/marcas.dart';
 
 class PageCar extends StatefulWidget {
   const PageCar({super.key});
